@@ -1,0 +1,101 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-color: #dad7cd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+header{
+    
+    
+}
+nav{
+    display: flex;
+    background-color: #588157;
+    justify-content: space-around;
+    padding-top:1vw;
+    padding-bottom:1vw;
+}
+.pagetitle{
+    color:#c9dba8;
+}
+.links a{
+    padding-left:5px;
+}
+#pages{
+    display: inline-block;
+    transition: 0.4s;
+    text-decoration: none;
+    color:#c9dba8;
+}
+#pages:hover{
+    text-size-adjust: larger;
+    color:white;
+    transition: 0.4s;
+}
+footer{
+    background-color: #a3b18a;
+    position: fixed;
+    bottom:0%;
+    width:100vw;
+}
+#icontainer{
+    float: right;
+}
+.icon{
+    background: url('../images/sprite3.png') no-repeat;
+    width:66px;
+    height:66px;
+    display: inline-block;
+}
+#soundcloud
+{
+    background-position: -587px -72px ;
+}
+#facebook{
+    background-position: -439px -146px;
+}
+#youtube{
+    background-position: -439px -221px;
+}
+#pinterest{
+    background-position: -141px -221px;
+}
+@media screen and (max-width:600px){
+    nav{
+        position: relative;
+        background-color: #606c38;
+    }
+    .pagetitle{
+        background-color: #598359;
+        padding:3px;
+        border-radius: 5px;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        width:100vw;
+        box-shadow: 0px 8px 16px 0px #598359;
+    }
+    .links a{
+        padding:5px;
+        min-width:100vw;
+        background-color:#4c552d;
+    }
+    .links a:hover{
+        display:block;
+        background-color: #768545;
+        text-size-adjust: larger;
+        transition:0.4s;
+        
+    }
+    nav:hover .links{
+        display: block;
+        transition:0.4s;
+    }
+    
+}
